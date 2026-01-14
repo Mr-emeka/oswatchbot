@@ -1,7 +1,7 @@
-const axios = require('axios');
+import axios from 'axios';
 import { Router } from 'express';
 
-const router = Router();
+const router: Router = Router();
 
 router.get('/github', (req, res) => {
   const params = new URLSearchParams({
@@ -29,4 +29,4 @@ router.get('/github/callback', async (req, res) => {
   res.json(data);
 });
 
-module.exports = router;
+export default router;
