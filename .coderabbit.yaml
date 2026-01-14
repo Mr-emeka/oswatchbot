@@ -1,0 +1,8 @@
+reviews:
+  auto_review:
+    enabled: true
+    branches:
+      include:
+        - main
+        - development
+        - staging
